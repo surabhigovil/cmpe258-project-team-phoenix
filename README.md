@@ -10,7 +10,8 @@ Steps for docker:
 It'll bring up the docker.
 * bash scripts/nginx-airflow.sh </br>
 On browsing to the url - 35.193.94.65, airflow UI shows up.
-
+* bash scripts/nginx-app.sh </br>
+On running the above command, our application UI shows up.
 
 
 Reference for python and UI:
