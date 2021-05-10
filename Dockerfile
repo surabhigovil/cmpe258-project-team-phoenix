@@ -81,7 +81,6 @@ COPY requirements.txt requirements.txt
 RUN pip install git+https://github.com/fastai/fastai.git
 RUN pip install -r requirements.txt
 COPY dags ${AIRFLOW_USER_HOME}/dags
-COPY data ${AIRFLOW_USER_HOME}/data
 COPY scripts ${AIRFLOW_USER_HOME}/scripts
 COPY static ${AIRFLOW_USER_HOME}/scripts/static
 COPY templates ${AIRFLOW_USER_HOME}/scripts/templates
