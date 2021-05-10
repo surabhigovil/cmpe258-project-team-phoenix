@@ -17,15 +17,15 @@ from tensorflow.keras.preprocessing import image
 # Flask utils
 from flask import Flask, redirect, url_for, request, render_template
 from werkzeug.utils import secure_filename
-#from gevent.pywsgi import WSGIServer
+from gevent.pywsgi import WSGIServer
 
 # Define a flask app
 app = Flask(__name__)
 
 # Model saved with Keras model.save()
-MODEL_PATH ='weights_best_vgg16_model2.hdf5'
+MODEL_PATH ='/usr/local/airflow/scripts/weights_best_vgg16_model2.hdf5'
 
-#MODEL_PATH = 'model_vgg19.h5'
+# MODEL_PATH = 'weights_best_vgg16_model2.hdf5'
 
 # Load your trained model
 model = load_model(MODEL_PATH)
@@ -101,4 +101,5 @@ def upload():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    #Added hostname and port
+    app.run(host = "0.0.0.0",port = 8008)
