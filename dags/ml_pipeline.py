@@ -49,7 +49,7 @@ download_images = BashOperator(
 train = BashOperator(
     task_id='train',
     depends_on_past=False,
-    bash_command='python3 /usr/local/airflow/scripts/train_statefarm.py',
+    bash_command='python3 /usr/local/airflow/scripts/train_tensorboard.py',
     retries=3,
     dag=dag,
 )
