@@ -1,12 +1,10 @@
-# VERSION 1.10.10
-# AUTHOR: Binh Phan
-# DESCRIPTION: greenr-airflow container
-# BUILD: docker build --rm -t btphan95/greenr-airflow .
-# SOURCE: https://github.com/btphan95/greenr-airflow
+# AUTHOR: Team Phoenix
+# DESCRIPTION: driver-drowsiness container
+# BUILD: docker build -t driver-drowsiness:latest .
 
 FROM python:3.6-slim-stretch
 
-LABEL maintainer="Binh_"
+LABEL maintainer="TeamPhoenix_"
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV TERM linux
@@ -60,6 +58,7 @@ RUN set -ex \
     && pip install 'redis==3.2' \
     && pip install 'tensorflow' \
     && pip install 'opencv-python' \
+    && pip install keras \
     && if [ -n "${PYTHON_DEPS}" ]; then pip install ${PYTHON_DEPS}; fi \
     && apt-get purge --auto-remove -yqq $buildDeps \
     && apt-get autoremove -yqq --purge \
@@ -80,6 +79,7 @@ COPY config/airflow.cfg ${AIRFLOW_USER_HOME}/airflow.cfg
 COPY requirements.txt requirements.txt
 RUN pip install git+https://github.com/fastai/fastai.git
 RUN pip install -r requirements.txt
+COPY data ${AIRFLOW_USER_HOME}/data
 COPY dags ${AIRFLOW_USER_HOME}/dags
 COPY scripts ${AIRFLOW_USER_HOME}/scripts
 COPY static ${AIRFLOW_USER_HOME}/scripts/static

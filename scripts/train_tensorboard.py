@@ -68,7 +68,7 @@ base_model  = tf.keras.applications.resnet.ResNet50(include_top = False,
                                                   weights = 'imagenet',
                                                   input_shape = (224,224,3))
 
-tensorboard = TensorBoard(log_dir="logs/{}".format(NAME))
+tensorboard = TensorBoard(log_dir="/usr/local/airflow/logs/{}".format(NAME))
 
 x = base_model.output
 x = tf.keras.layers.Flatten()(x)
