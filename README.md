@@ -1,6 +1,6 @@
 # Driver Attention Detection using CNN (cmpe258-project-team-phoenix)
 
-We developed a model which classifies a given image into one of the ten classes defined for distraction or safe driving based on the activity the driver is doing in an image. We used [StateFarm dataset](https://www.kaggle.com/c/state-farm-distracted-driver-detection) available on Kaggle for our project. For getting real time inference from the trained model, we used Apache Airflow to orchestrate our Machine learning pipeline.  
+We developed a CNN based model which classifies a given image into one of the ten classes defined for distraction or safe driving based on the activity the driver is doing in an image. We used [StateFarm dataset](https://www.kaggle.com/c/state-farm-distracted-driver-detection) available on Kaggle for our project. For getting real time inference from the trained model, we used Apache Airflow to orchestrate our Machine learning pipeline.  
 
 **An example image of a distracted driver** 
 
@@ -9,6 +9,15 @@ We developed a model which classifies a given image into one of the ten classes 
 **Project Report can be found [here](https://github.com/surabhigovil/cmpe258-project-team-phoenix/blob/main/documentation/Project%20Paper.pdf)**
 
 **[Long Form Presentation video](https://drive.google.com/file/d/1aitEVYH6J2n6SpBenH2MLuebYsktXkMN/view?usp=sharing)**
+
+
+**Evaluation using Tensorboard**
+
+<a href="url"><img src="https://github.com/surabhigovil/cmpe258-project-team-phoenix/blob/main/documentation/tensorboard.jpeg" align="center" height="500" width="600" ></a>
+
+**Confusion matrix**
+
+<a href="url"><img src="https://github.com/surabhigovil/cmpe258-project-team-phoenix/blob/main/documentation/confusionmatrix.jpeg" align="center" height="500" width="600" ></a>
 
 **Team Contributions**
 * Arpitha Gurumurthy - Model Deployment on Airflow, Visualization of results, Documentation
