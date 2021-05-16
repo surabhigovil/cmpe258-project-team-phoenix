@@ -6,9 +6,13 @@ We developed a CNN based model which classifies a given image into one of the te
 
 <a href="url"><img src="https://raw.githubusercontent.com/surabhigovil/cmpe258-project-team-phoenix/main/data/imgs/train/c3/img_101200.jpg" align="center" height="200" width="300" ></a>
 
+**Project Proposal can be found [here](https://github.com/surabhigovil/cmpe258-project-team-phoenix/blob/main/documentation/Project%20Proposal%20-%20Driver%20Attention%20Detection%20System%20using%20CNN.pdf)**
+
 **Project Report can be found [here](https://github.com/surabhigovil/cmpe258-project-team-phoenix/blob/main/documentation/Project%20Paper.pdf)**
 
 **[Long Form Presentation video](https://drive.google.com/file/d/1aitEVYH6J2n6SpBenH2MLuebYsktXkMN/view?usp=sharing)**
+
+**[Presentation Slides](https://github.com/surabhigovil/cmpe258-project-team-phoenix/blob/main/documentation/258%20Presentation.pptx)**
 
 
 **Evaluation using Tensorboard**
