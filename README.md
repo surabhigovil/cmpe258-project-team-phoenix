@@ -10,6 +10,11 @@ We developed a model which classifies a given image into one of the ten classes 
 
 **[Long Form Presentation video](https://drive.google.com/file/d/1aitEVYH6J2n6SpBenH2MLuebYsktXkMN/view?usp=sharing)**
 
+**Team Contributions**
+* Arpitha Gurumurthy - Model Deployment on Airflow, Visualization of results, Documentation
+* Surabhi Govil - Preprocessing images, Model Architecture, training CNN and VGG models, Documentation
+* Gayathri Pulagam - Preprocessing images, Model Architecture, training CNN and EfficientNet models, Documentation
+
 **[Reference for docker installation](https://towardsdatascience.com/10-minutes-to-building-a-machine-learning-pipeline-with-apache-airflow-53cd09268977)**
 
 **Steps for docker**
